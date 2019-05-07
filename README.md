@@ -9,6 +9,7 @@ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 
 # ディレクトリ構成案
 
+```
 /common
     /domains
         /channele　モデル定義＋データ取得。アプリケーションごとに作らず、まとめる
@@ -27,6 +28,7 @@ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
     /views
     /router
     /config
+```
 
 
 開発環境はローカルのDynamoDBを使う。
@@ -34,17 +36,28 @@ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 
 Node.jsのテストコードの書き方は確認しておく。
 
-### メッセージの取得
+### チャネル以下のメッセージの取得
+
+```
+http://{hostname}:{port}/{channelId}/messages
+```
 
 ```
 curl http://localhost:3000/001/messages
 ```
 
-### メッセージの単件
+### 送信日時を指定してメッセージの単件取得
+
+```
+http://{hostname}:{port}/{channelId}/message/{sendDate}
+```
+
 
 ```
 curl http://localhost:8080/001/message/2019%2F05%2F01
 ```
+
+### メッセージの送信
 
 ```
 curl -X POST http://localhost:8080/001/message/ -H "Content-type: application/json" -d '{"sendDate":"2019/06/01", "body":"from curl1"}'
