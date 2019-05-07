@@ -7,6 +7,20 @@ https://docs.aws.amazon.com/ja_jp/amazondynamodb/latest/developerguide/DynamoDBL
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
+# ビルドと起動
+
+## ビルド
+
+```
+npm run build
+```
+
+## 起動
+
+```
+npm run start
+```
+
 # ディレクトリ構成案
 
 ```
