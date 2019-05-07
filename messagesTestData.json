@@ -1,0 +1,12 @@
+[
+    {"channelId": "001", "sendDate":"2019/05/01", "body":"testtest1"},
+    {"channelId": "001", "sendDate":"2019/05/02", "body":"testtest2"},
+    {"channelId": "001", "sendDate":"2019/05/03", "body":"testtest3"},
+    {"channelId": "001", "sendDate":"2019/05/04", "body":"testtest4"},
+    {"channelId": "001", "sendDate":"2019/05/05", "body":"testtest5"},
+    {"channelId": "002", "sendDate":"2019/05/01", "body":"testtest6"},
+    {"channelId": "002", "sendDate":"2019/05/02", "body":"testtest7"},
+    {"channelId": "002", "sendDate":"2019/05/03", "body":"testtest8"},
+    {"channelId": "002", "sendDate":"2019/05/04", "body":"testtest9"},
+    {"channelId": "002", "sendDate":"2019/05/05", "body":"testtest10"}
+]
